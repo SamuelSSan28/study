@@ -15,6 +15,7 @@ Small weekly projects for learning engineering concepts through implementation, 
 
 | Project | Focus |
 | --- | --- |
+| [005 — Mini Job Queue](./projects/005-mini-job-queue/) | PostgreSQL-backed jobs, worker leases, retries, and crash recovery |
 | [006 — Mini Zustand](./projects/006-mini-zustand/) | External stores, subscriptions, selectors, and React rerenders |
 
 Start with a project's `README.md`. Its `STUDY.md` records observations, while `DECISIONS.md` explains consequential trade-offs.
