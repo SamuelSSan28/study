@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;600;700;800&display=swap');
+
+:root { font-family: Manrope, sans-serif; color: #17211d; background: #eef0e8; font-synthesis: none; }
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; min-height: 100vh; background: radial-gradient(circle at 85% 10%, #d9ff65 0 8%, transparent 24%), #eef0e8; }
+button, input { font: inherit; }
+button { cursor: pointer; }
+main { width: min(1100px, calc(100% - 32px)); margin: auto; padding: 28px 0 44px; }
+header { display: flex; align-items: center; gap: 14px; border-bottom: 1px solid #aeb5ac; padding-bottom: 22px; }
+.brand { display: grid; place-items: center; width: 48px; height: 48px; background: #17211d; color: #d9ff65; border-radius: 14px; font: 500 16px 'DM Mono'; }
+h1, h2, p { margin: 0; }
+h1 { font-size: 20px; line-height: 1.1; } h1 em { color: #607065; font-style: normal; font-weight: 400; }
+.eyebrow { color: #647067; font: 500 11px 'DM Mono'; letter-spacing: .12em; text-transform: uppercase; margin-bottom: 6px; }
+.framework-pill { margin-left: auto; border: 1px solid #8e998f; border-radius: 100px; padding: 8px 13px; font: 500 11px 'DM Mono'; }
+.intro { padding: 62px 0 42px; max-width: 720px; }
+.intro h2 { font-size: clamp(40px, 7vw, 72px); letter-spacing: -.06em; line-height: .97; }
+.intro h2 span { color: #617066; }
+.intro > p:last-child { color: #59645d; max-width: 600px; margin-top: 22px; line-height: 1.7; }
+.workspace { display: grid; grid-template-columns: 310px 1fr; gap: 20px; }
+.controls { display: flex; flex-direction: column; gap: 12px; }
+.control-card, .selection-panel, .issues { border: 1px solid #c0c6bd; border-radius: 20px; background: rgba(249,250,244,.8); }
+.control-card { padding: 20px; }
+.label-row, .section-heading, .selection-panel { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.label-row { font-weight: 700; font-size: 13px; margin-bottom: 12px; }
+.render-badge { color: #667269; border: 1px solid #c5cbc2; border-radius: 6px; padding: 4px 6px; font: 400 9px 'DM Mono'; white-space: nowrap; }
+input { width: 100%; border: 1px solid #9ca69e; border-radius: 10px; padding: 12px; background: #fff; outline: none; }
+input:focus { border-color: #17211d; box-shadow: 0 0 0 3px #d9ff65; }
+.segmented { display: grid; grid-template-columns: repeat(3, 1fr); background: #e8ebe4; border-radius: 10px; padding: 3px; }
+.segmented button { border: 0; border-radius: 8px; background: transparent; padding: 9px; text-transform: capitalize; font-size: 12px; }
+.segmented button.active { color: #fff; background: #17211d; }
+.selection-panel { padding: 18px 20px; margin-top: auto; background: #d9ff65; border-color: #b3d84c; }
+.selection-panel strong { font-size: 13px; }
+.issues { overflow: hidden; padding: 25px; }
+.section-heading { margin-bottom: 18px; }
+.section-heading h2 { font-size: 24px; }.section-heading h2 span { color: #778179; font: 400 13px 'DM Mono'; }
+.issue-list { display: flex; flex-direction: column; gap: 8px; }
+.issue-row { display: grid; grid-template-columns: 42px 1fr auto; text-align: left; align-items: center; gap: 12px; border: 1px solid transparent; border-radius: 13px; background: #f0f2ec; padding: 15px; color: inherit; }
+.issue-row:hover { background: #e8ebe3; }.issue-row.selected { border-color: #17211d; background: #fff; box-shadow: 4px 4px 0 #d9ff65; }
+.issue-number { color: #748078; font: 400 11px 'DM Mono'; }.issue-copy { display: flex; flex-direction: column; gap: 4px; }.issue-copy strong { font-size: 14px; }.issue-copy small { color: #6d756f; }
+.status { border-radius: 99px; padding: 6px 9px; font: 500 9px 'DM Mono'; text-transform: uppercase; }.status.open { background: #d9ff65; }.status.done { background: #dce1da; color: #657067; }
+.empty { color: #6d756f; padding: 42px; text-align: center; }
+footer { display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 12px; margin-top: 28px; color: #606b63; font: 400 10px 'DM Mono'; text-transform: uppercase; } footer b { color: #94a097; }
+@media (max-width: 760px) { .framework-pill { display: none; }.intro { padding-top: 45px; }.workspace { grid-template-columns: 1fr; }.selection-panel { margin-top: 0; }.issues { padding: 16px; }.issue-copy small { display: none; } }
